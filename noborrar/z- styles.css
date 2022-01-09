@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+/* EMPIEZA: index  */
+.fondoheader {
+  background-color: #DDDDDD !important;
+}
+
+.fondoprincipalinicio {
+  background-image: url(img/Principal.png);
+}
+
+.principal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.principal h1 {
+  display: block;
+  color: black;
+  font-weight: 700;
+  text-shadow: 5px 5px 5px burlywood;
+}
+.principal span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.fondocolor {
+  background-color: burlywood;
+}
+
+.parrafoMain p {
+  font-size: 18px;
+  padding: 18px;
+}
+
+.footerprincipal {
+  padding-top: 20px;
+  font-weight: 900;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #F8D6AF;
+}
+
+/* proyectos imagenes */
+.img {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.img1 {
+  grid-area: img1;
+  background-image: url(img/proyecto1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img2 {
+  grid-area: img2;
+  background-image: url(img/proyecto2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img3 {
+  grid-area: img3;
+  background-image: url(img/proyecto3.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img4 {
+  grid-area: img4;
+  background-image: url(img/proyecto4.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img5 {
+  grid-area: img5;
+  background-image: url(img/proyecto5.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img6 {
+  grid-area: img6;
+  background-image: url(img/proyecto6.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img7 {
+  grid-area: img7;
+  background-image: url(img/proyecto7.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img8 {
+  grid-area: img8;
+  background-image: url(img/proyecto8.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img9 {
+  grid-area: img9;
+  background-image: url(img/proyecto9.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img10 {
+  grid-area: img10;
+  background-image: url(img/proyecto10.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img11 {
+  grid-area: img11;
+  background-image: url(img/proyecto11.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img12 {
+  grid-area: img12;
+  background-image: url(img/proyecto12.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img13 {
+  grid-area: img13;
+  background-image: url(img/proyecto13.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* PAGOS */
+.fondoprincipalpagos {
+  background-image: url(img/Pagos2.jpg);
+  padding-bottom: 220PX;
+}
+
+.section_pagos {
+  display: flex;
+  justify-content: center;
+}
+.section_pagos h2 {
+  text-shadow: 5px 5px 5px #543216;
+}
+
+.fondogeneralpagos {
+  background-image: url(img/PagosFondo.jpg);
+}
+
+.pagosdecoracion {
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.pagosdecoracion2 {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* CONTACTOS */
+.fondoprincipalcontacto {
+  background-image: url(img/contacto.jpg);
+}
+
+.fondogeneralcontacto {
+  background-image: url(img/ContactoFondo.jfif);
+}
+
+/* ANIMACIONES */
+.efect {
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+@keyframes efecto {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* MENU */
+li {
+  transition-duration: 0.2s;
+}
+
+li:nth-of-type(1):hover {
+  border-bottom: 3px dotted grey;
+}
+
+li:nth-of-type(2):hover {
+  border-bottom: 3px dotted grey;
+}
+
+li:nth-of-type(3):hover {
+  border-bottom: 3px dotted grey;
+}
+
+li:nth-of-type(4):hover {
+  border-bottom: 3px dotted grey;
+}
+
+li:nth-of-type(5):hover {
+  border-bottom: 3px dotted grey;
+}
+
+/* ESQUINA DOBLADA */
+.esquina {
+  transform: translateX(0);
+}
+
+.esquina::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+  transition-duration: 0.3s;
+}
+
+.esquina:hover::before {
+  width: 30px;
+  height: 35px;
+}
+
+/* ESCALAR */
+.escalar {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+.escalar:hover {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.nuevosproyectos {
+  background-image: url(img/ProyectoFondo.webp);
+}
+
+.row {
+  padding: 20px;
+}
+
+.container {
+  padding: 50px 0px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* mobile index */
+  .nav-item {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .nav-link {
+    font-size: 25px;
+    padding: 10px;
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* saca decoracion */
+  }
+  .nav-link:hover {
+    color: red !important;
+  }
+
+  .principal h1 {
+    font-size: 35px;
+    margin-top: 210px;
+  }
+  .principal span {
+    font-size: 35px;
+  }
+
+  .carouselimg {
+    width: 100%;
+    height: 40%;
+  }
+
+  .fondoSection {
+    background-image: url(./img/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contenedorIframe {
+    color: white;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 25%;
+  }
+  .contenedorIframe h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+    text-shadow: 5px 5px 5px burlywood;
+  }
+  .contenedorIframe p {
+    margin-bottom: 200px;
+  }
+  .contenedorIframe iframe {
+    width: 100%;
+    height: 50%;
+  }
+
+  /* mobile nosotros */
+  .fondoprincipalnosotros {
+    background-image: url(img/NosotrosFondo.jpg);
+  }
+
+  .empresa {
+    background-image: url(img/NosotrosFondo2.jpg);
+  }
+  .empresa img {
+    padding: 50px;
+    width: 100%;
+  }
+  .empresa h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+  }
+  .empresa p {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 20px;
+  }
+  .empresa ul li {
+    display: flex;
+    justify-content: left;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+
+  /* mobile proyectos */
+  .proyecto {
+    background-image: url(img/ProyectoFondo.webp);
+    height: 550px;
+  }
+
+  .texto_proyecto h1 {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 40px;
+    padding: 100px 100px 0px 100px;
+    color: black;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #543216;
+  }
+  .texto_proyecto h2 {
+    padding: 20px;
+    color: black;
+  }
+
+  .proyectos {
+    background-image: url(img/ProyectoFondo.webp);
+    display: grid;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img5" "img6 img7" "img6 img8" "img9 img9" "img10 img11" "img12 img11" "img12 img13";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+    padding: 0 20px 20px 20px;
+    padding-bottom: 200px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  /* tablet index */
+  .nav-item {
+    padding: 5px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* saca decoracion */
+  }
+  .nav-link:hover {
+    color: red !important;
+  }
+
+  .principal h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .principal span {
+    font-size: 40px;
+  }
+
+  .carouselimg {
+    width: 100%;
+    height: 60%;
+  }
+
+  .fondoSection {
+    background-image: url(./img/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contenedorIframe {
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 25%;
+  }
+  .contenedorIframe h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+    text-shadow: 5px 5px 5px burlywood;
+  }
+  .contenedorIframe p {
+    font-weight: 550;
+    margin-bottom: 200px;
+  }
+  .contenedorIframe iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* tablet nosotros */
+  .fondoprincipalnosotros {
+    background-image: url(img/NosotrosFondo.jpg);
+  }
+
+  .empresa {
+    background-image: url(img/NosotrosFondo2.jpg);
+  }
+  .empresa img {
+    padding: 50px;
+    height: 100%;
+    width: 100%;
+  }
+  .empresa h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-size: 32px;
+  }
+  .empresa p {
+    padding: 50px;
+    font-size: 20px;
+  }
+  .empresa ul li {
+    padding: 10px 200px;
+    font-size: 20px;
+  }
+
+  /* tablet proyecto */
+  .proyecto {
+    background-image: url(img/ProyectoFondo.webp);
+    height: 500px;
+  }
+
+  .texto_proyecto h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    padding: 80px 20px;
+    color: black;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #543216;
+  }
+  .texto_proyecto h2 {
+    padding: 40px 60px;
+    color: black;
+  }
+
+  .proyectos {
+    background-image: url(img/ProyectoFondo.webp);
+    display: grid;
+    grid-template-areas: "img1 img2 img2" "img1 img3 img4" "img5 img6 img6" "img7 img8 img9" "img7 img10 img11" "img12 img12 img13";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 200px 150px 150px 150px 150px;
+    padding: 0 50px 50px 50px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* pc index */
+  .nav-item {
+    padding: 8px;
+  }
+
+  .nav-link {
+    font-size: 25px;
+    color: white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: red !important;
+  }
+
+  .principal h1 {
+    font-size: 100px;
+    margin-top: 210px;
+  }
+  .principal span {
+    font-size: 100px;
+  }
+
+  .carouselimg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .fondoSection {
+    background-image: url(./img/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contenedorIframe {
+    color: white;
+    font-weight: 900;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contenedorIframe h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+    text-shadow: 5px 5px 5px burlywood;
+  }
+  .contenedorIframe p {
+    font-weight: 550;
+    margin-bottom: 200px;
+  }
+  .contenedorIframe iframe {
+    width: 400px;
+    height: 300px;
+  }
+
+  /* pc nosotros */
+  .fondoprincipalnosotros {
+    background-image: url(img/NosotrosFondo.jpg);
+  }
+
+  .empresa {
+    background-image: url(img/NosotrosFondo2.jpg);
+  }
+  .empresa img {
+    padding: 15px;
+    height: 412px;
+    width: 550px;
+  }
+  .empresa h2 {
+    padding: 20px 50px;
+    font-size: 32px;
+    text-shadow: 5px 5px 5px burlywood;
+  }
+  .empresa p {
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .empresa ul li {
+    padding-right: 100px;
+    font-size: 20px;
+  }
+
+  .empresa_separador {
+    display: flex;
+  }
+
+  /* pc proyecto */
+  .proyecto {
+    background-image: url(img/ProyectoFondo.webp);
+    height: 600px;
+  }
+
+  .texto_proyecto h1 {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 76px;
+    padding-top: 210px;
+    color: black;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px #543216;
+  }
+  .texto_proyecto h2 {
+    padding: 50px 100px 0px 100px;
+    color: black;
+  }
+
+  .proyectos {
+    background-image: url(img/ProyectoFondo.webp);
+    display: grid;
+    grid-template-areas: "img1 img2 img2 img3" "img1 img4 img5 img3" "img6 img6 img5 img3" "img7 img8 img8 img9" "img10 img10 img11 img9" "img12 img12 img13 img13";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 200px 150px 150px 150px 150px;
+    padding: 0 50px 50px 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

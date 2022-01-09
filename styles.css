@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+.navbar {
+    padding: 0; /* barra navegacion */
+    
+}
+
+.navbar-nav{
+    padding:0px 50px;
+}
+
+.navbar-brand {
+    padding: 0px 50px; /* logo */ 
+}
+
+.nav-item {
+    padding:1px 10px;
+}
+
+.bg-secondary {
+    background-color: #DDDDDD!important;
+    
+}
+
+a.nav-link{
+    color: #222831 !important;
+}
+
+.principal{
+    background-image: url(/img/bg-image.jpg);
+}
+
+.principal1{
+    padding: 50px;
+}
+
+.principal2{
+    /* padding: 10px 100px; */
+    padding: 10px 120px;
+}
+
+.info{
+    background-color: #686d70;
+}
+
+.ideas{
+    background-color: #DDDDDD;
+}
+
+.proyectos{
+    background-color: #222831;
+}
+
+.contactos{
+    background-color: #d6e5fa;
+    padding: 20px;
+}
+
+h1{
+    color:#F05454;
+}
+
+h2{
+    color: #79b4ee;
+}
+
+h3{
+    color: #222831;
+}
+
+h4{
+    color: #F05454;
+}
+
+h5{
+    color: #DDDDDD;
+}
+
+h6{
+    color:#F05454;
+}
+
+p{
+    color: #686d70;
+}
+
+.separacion{
+    border-top: 10px solid #79b4ee;
+    margin: 50px;
+    padding-top: 20px;
+}
+
+.separacion2{
+    border-top: 5px solid #79b4ee;
+    border-bottom: 5px solid #79b4ee;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+a{
+    color: #79b4ee;
+}
+
+.pagosdecoracion{
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+.miestilo2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0px;
+    color: white !important;
+    line-height: 400px;
+
+}
+
+.caja{
+    background-color: #F05454;
+    height: 400px;
+    width: 600px;
+    border: 5px solid #686d70;
+    margin:20px;
+}
+
+
+.caja:hover{
+    color: white;
+    border: 5px solid #79b4ee;
+    font-size: 50px;
+}
+
+.fas{
+    font-size: 30px;
+}
+
+
+.fotosprincipal{
+    margin: 15px 0px;
+}
+.fotosprincipal2{
+    padding: 0px;
+}
+
+
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 35px;
+  }
+ 
+.informacion2{
+    width: 400px;
+    height: 250px;
+    padding: 35px;
+}
+
+.informacion4{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+ 
+.informacion3{
+    padding: 35px;
+}
+
+
+.debajomenu{
+    height: 300px;
+    background-color: #DDDDDD;
+    padding: 100px 0px;   
+}
+
+footer{
+    background-color: #222831;
+    height: 150px;
+    padding: 20px;
+}
