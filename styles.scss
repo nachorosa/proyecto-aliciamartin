@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+$color1:#DDDDDD;
+$color2:#222831;
+$color3:#686d70;
+$color4:#F05454;
+
+.debajomenu {
+    height: 300px;
+    padding: 100px 0px;
+    & h1{
+        color: $color4;
+    }
+    & p{
+        color: white;
+        font-size: 22px;
+    }
+}
+
+// index
+.navbar {
+    padding: 0; /* barra navegacion */
+}
+
+.navbar-nav{
+    padding:0px 50px;
+}
+
+.navbar-brand {
+    padding: 0px 50px; /* logo */ 
+}
+
+.nav-item {
+    padding:1px 10px;
+}
+
+.bg-secondary {
+    background-color: $color1!important;
+}
+
+a.nav-link {
+    color: $color2!important;
+}
+
+.presentacion {
+    background-image: url(img/bg-image.jpg);
+    & h1{
+    color: $color4;
+    padding: 50px;
+    }
+    & p{
+    color: $color1;
+    padding: 10px 120px;
+    font-size: 20px;
+    }
+}
+
+.fotosprincipal {
+    padding: 15px 0px;
+}
+
+
+// aparecer texto en img
+.mostrar1 {
+    background-image: url(/img/index-1.jpg);
+    text-align: center;
+    font-size: 0px;
+    line-height: 130px;
+    margin: 10px 0px;
+}
+
+
+.mostrar1:hover {
+    color: $color4;
+    font-size: 30px;
+}
+
+.mostrar2 {
+    background-image: url(/img/index-2.jpg);
+    text-align: center;
+    font-size: 0px;
+    line-height: 130px;
+    margin: 10px 0px;
+}
+
+
+.mostrar2:hover {
+    color: $color4;
+    font-size: 30px;
+}
+
+.mostrar3 {
+    background-image: url(/img/index-3.jpg);
+    text-align: center;
+    font-size: 0px;
+    line-height: 130px;
+    margin: 10px 0px;
+}
+
+.mostrar3:hover {
+    color: $color4;
+    font-size: 30px;
+}
+
+.indexcarrousel {
+    & img{
+    width:1440px;
+    height:610px;
+    }
+    & h2{
+    color: $color4;
+    }
+}
+
+.ideasenfoque {
+    background-color: $color1;
+}
+ 
+.informacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 35px;
+    & h2 {
+    color: $color4;
+    }
+}
+ 
+.informacion2 {
+    width: 400px;
+    height: 250px;
+    padding: 35px;
+    & P{
+        color: $color2;
+    }
+}
+
+.informacion4 {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    & img {
+    width:32px;
+    height:32px; 
+    }
+}
+
+.indexfinal {
+    background-color: $color3;
+}
+
+.informacion3 {
+    padding: 35px;
+    & p {
+        color: $color1;
+    }
+    & h2{
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+.presentacion {
+    & h1{
+    padding: 25px;
+    }
+    & p{
+    padding: 5px 20px;
+    font-size: 20px;
+    }
+}
+
+.informacion {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.informacion2 {
+    width: 100%;
+}
+}
+
+// nosotros
+
+.separacion {
+    border-top: 10px solid $color4;
+    margin: 50px;
+    padding-top: 20px;
+    & img {
+        width:100%;
+    }
+    & h2 {
+        font-size: 18px;
+        color: $color4;
+    }
+    & h3 {
+        font-size: 26px;
+        color: $color2;
+    }
+    & a{
+        color: $color4;
+    }
+    & p{
+        color: $color2;
+    }
+}
+
+.pagosdecoracion {
+    padding: 15px;
+    padding-bottom: 50px;
+}
+.ajustesnosotros{
+    display: flex;
+}
+
+.ajustesnosotros2{
+    padding-bottom: 5px;
+    & img{
+    width: 100%;
+    }
+}
+
+.bgnosotros{
+    background-image: url(/img/bg-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+.ajustesnosotros{
+    display: block;
+}
+}
+// proyectos
+.proyectos {
+    background-color: $color2;
+}
+
+.miestilo2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 0px;
+    color: white !important;
+    line-height: 400px;
+}
+
+.caja {
+    background-color: $color1;
+    height: 400px;
+    width: 600px;
+    border: 5px solid $color3;
+    margin:20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+@for $i from 1 through 12{
+    .caja#{$i}{
+    background-image: url(/img/proyecto-#{$i}.jpg);
+    }
+}
+
+
+.caja:hover {
+    color: $color4;
+    border: 5px solid $color4;
+    font-size: 50px;
+}
+
+.bgproyectos{
+    background-image: url(/img/bg-image3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// contacto
+.contactos {
+    background-color: $color3;
+    padding: 20px;
+    & h2 {
+        color: $color4;
+    }
+    & h3 {
+        color: $color2;
+    }
+    & p {
+        color: $color1;
+    }
+    & .btn-primary{
+        background-color: $color4;
+        border-color: $color4;
+        color: $color1;
+    }
+}
+
+.fas {
+    font-size: 30px;
+}
+
+.bgcontacto{
+    background-image: url(/img/bg-image4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// example1
+.separacion2 {
+    border-top: 5px solid $color4;
+    border-bottom: 5px solid $color4;
+    margin: 50px;
+    padding: 10px;
+    & a{
+        color: $color4;
+    }
+}
+
+.example{
+    padding-bottom: 58px;
+    & img {
+        width:100%;
+    }
+    & h2{
+        color: $color4;
+    }
+    & h3{
+        color: $color2;
+    }
+    & p{
+        color: $color3;
+    }
+}
+
+.ajustesexample{
+    padding-top: 25px;
+}
+
+// footer
+footer {
+    background-color: $color2;
+    height: 150px;
+    padding: 20px;
+    color: $color1;
+}
+
+
+/* ANIMACIONES */
+.efect {
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 10s;
+    animation-delay: 0s;
+  }
+  
+  @keyframes efecto {
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* MENU */
+  .nav-link:hover {
+    transition-duration: 0.3s;
+    color: $color1 !important;
+  }
+
+  li {
+    transition-duration: 0.3s;
+  }
+
+@for $i from 1 through 4{
+    li:nth-of-type(#{$i}):hover{
+    border: 1px solid $color4;
+    background-color: $color4;  
+    }
+}
+
+//   li:nth-of-type(1):hover {
+//     border: 1px solid red;
+//     background-color: $color4;  
+// }
+  
+//   li:nth-of-type(2):hover {
+//     border-bottom: 3px dotted grey;
+//   }
+  
+//   li:nth-of-type(3):hover {
+//     border-bottom: 3px dotted grey;
+//   }
+  
+//   li:nth-of-type(4):hover {
+//     border-bottom: 3px dotted grey;
+//   }
+    
+  /* ESQUINA DOBLADA */
+  .esquina {
+    transform: translateX(0);
+  }
+  
+  .esquina::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+    transition-duration: 0.3s;
+  }
+  
+  .esquina:hover::before {
+    height: 35px;
+    width: 30px;
+  }
+  
+  /* ESCALAR */
+  .escalar {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  
+  .escalar:hover {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  
+/* REDONDEAR BORDES */
+.esquinasRedondeadas{
+	transition-duration: 0.2s;
+}
+
+.esquinasRedondeadas:hover{
+	border-radius: 25px;
+}
