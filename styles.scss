@@ -67,46 +67,28 @@ a.nav-link {
 
 
 // aparecer texto en img
-.mostrar1 {
-    background-image: url(/img/index-1.jpg);
+
+.mostrar {
+    background-image: url(./img/index-1.jpg);
     text-align: center;
     font-size: 0px;
     line-height: 130px;
     margin: 10px 0px;
 }
 
-
-.mostrar1:hover {
-    color: $color4;
-    font-size: 30px;
+@for $i from 1 through 3{
+    .mostrar#{$i}{
+    background-image: url(./img/index-#{$i}.jpg);
+    }
 }
 
-.mostrar2 {
-    background-image: url(/img/index-2.jpg);
-    text-align: center;
-    font-size: 0px;
-    line-height: 130px;
-    margin: 10px 0px;
+@for $i from 1 through 3{
+    .mostrar#{$i}:hover{
+        color: $color4;
+        font-size: 30px;
+    }
 }
 
-
-.mostrar2:hover {
-    color: $color4;
-    font-size: 30px;
-}
-
-.mostrar3 {
-    background-image: url(/img/index-3.jpg);
-    text-align: center;
-    font-size: 0px;
-    line-height: 130px;
-    margin: 10px 0px;
-}
-
-.mostrar3:hover {
-    color: $color4;
-    font-size: 30px;
-}
 
 .indexcarrousel {
     & img{
@@ -235,7 +217,7 @@ a.nav-link {
 }
 
 .bgnosotros{
-    background-image: url(/img/bg-image2.jpg);
+    background-image: url(./img/bg-image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -288,7 +270,7 @@ a.nav-link {
 }
 
 .bgproyectos{
-    background-image: url(/img/bg-image3.jpg);
+    background-image: url(./img/bg-image3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -318,7 +300,7 @@ a.nav-link {
     font-size: 30px;
 }
 
-.bgcontacto{
+.bg.contacto{
     background-image: url(/img/bg-image4.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,23 +381,6 @@ footer {
     }
 }
 
-//   li:nth-of-type(1):hover {
-//     border: 1px solid red;
-//     background-color: $color4;  
-// }
-  
-//   li:nth-of-type(2):hover {
-//     border-bottom: 3px dotted grey;
-//   }
-  
-//   li:nth-of-type(3):hover {
-//     border-bottom: 3px dotted grey;
-//   }
-  
-//   li:nth-of-type(4):hover {
-//     border-bottom: 3px dotted grey;
-//   }
-    
   /* ESQUINA DOBLADA */
   .esquina {
     transform: translateX(0);

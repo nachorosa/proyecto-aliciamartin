@@ -66,12 +66,24 @@ a.nav-link {
   padding: 15px 0px;
 }
 
-.mostrar1 {
-  background-image: url(/img/index-1.jpg);
+.mostrar {
+  background-image: url(./img/index-1.jpg);
   text-align: center;
   font-size: 0px;
   line-height: 130px;
   margin: 10px 0px;
+}
+
+.mostrar1 {
+  background-image: url(./img/index-1.jpg);
+}
+
+.mostrar2 {
+  background-image: url(./img/index-2.jpg);
+}
+
+.mostrar3 {
+  background-image: url(./img/index-3.jpg);
 }
 
 .mostrar1:hover {
@@ -79,25 +91,9 @@ a.nav-link {
   font-size: 30px;
 }
 
-.mostrar2 {
-  background-image: url(/img/index-2.jpg);
-  text-align: center;
-  font-size: 0px;
-  line-height: 130px;
-  margin: 10px 0px;
-}
-
 .mostrar2:hover {
   color: #F05454;
   font-size: 30px;
-}
-
-.mostrar3 {
-  background-image: url(/img/index-3.jpg);
-  text-align: center;
-  font-size: 0px;
-  line-height: 130px;
-  margin: 10px 0px;
 }
 
 .mostrar3:hover {
@@ -249,7 +245,7 @@ a.nav-link {
 }
 
 .bgnosotros {
-  background-image: url(/img/bg-image2.jpg);
+  background-image: url(./img/bg-image2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -346,7 +342,7 @@ a.nav-link {
 }
 
 .bgproyectos {
-  background-image: url(/img/bg-image3.jpg);
+  background-image: url(./img/bg-image3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -379,7 +375,7 @@ a.nav-link {
   font-size: 30px;
 }
 
-.bgcontacto {
+.bg.contacto {
   background-image: url(/img/bg-image4.webp);
   background-repeat: no-repeat;
   background-size: cover;
