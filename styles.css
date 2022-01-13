@@ -462,28 +462,24 @@ footer {
   color: #DDDDDD !important;
 }
 
-li {
+.menuu li {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
 
-li:nth-of-type(1):hover {
-  border: 1px solid #F05454;
+.menuu li:nth-of-type(1):hover {
   background-color: #F05454;
 }
 
-li:nth-of-type(2):hover {
-  border: 1px solid #F05454;
+.menuu li:nth-of-type(2):hover {
   background-color: #F05454;
 }
 
-li:nth-of-type(3):hover {
-  border: 1px solid #F05454;
+.menuu li:nth-of-type(3):hover {
   background-color: #F05454;
 }
 
-li:nth-of-type(4):hover {
-  border: 1px solid #F05454;
+.menuu li:nth-of-type(4):hover {
   background-color: #F05454;
 }
 

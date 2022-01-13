@@ -364,18 +364,18 @@ footer {
     }
   }
   /* MENU */
+
   .nav-link:hover {
     transition-duration: 0.3s;
     color: $color1 !important;
   }
 
-  li {
+  .menuu li {
     transition-duration: 0.3s;
   }
 
 @for $i from 1 through 4{
-    li:nth-of-type(#{$i}):hover{
-    border: 1px solid $color4;
+    .menuu li:nth-of-type(#{$i}):hover{
     background-color: $color4;  
     }
 }
